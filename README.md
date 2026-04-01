@@ -28,12 +28,30 @@ Then open `http://localhost:8080`.
 
 ## Deployment
 
-This site can be deployed to:
+This repo is now set up for GitHub Pages deployment through GitHub Actions.
+
+### GitHub Pages
+
+1. Push the repository to GitHub.
+2. In GitHub, open `Settings` -> `Pages`.
+3. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+4. Push to `main` and GitHub will publish the site automatically.
+
+The workflow file lives at `.github/workflows/deploy-pages.yml`.
+
+Once Pages is enabled, your default site URL will usually be:
+
+- `https://rahulbhatia-rb.github.io/rahul-portfolio/`
+
+If you want to use a custom domain like `rahulhbhatia.com`, add it in the GitHub Pages settings after the first successful deploy and then update DNS at your domain provider.
+
+### Other Static Hosts
+
+This site also works without changes on:
 
 - Vercel
 - Cloudflare Pages
 - Netlify
-- GitHub Pages
 
 ## Domain
 
